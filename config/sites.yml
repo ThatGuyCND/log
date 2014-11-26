@@ -1,3 +1,8 @@
+log:
+  domain: log.pt
+  location: sites/log
+  environment: local
+
 default:
   domain: '*'
   location: sites/default

@@ -20,6 +20,7 @@ Everyone needs a log.
 1. [Requirements](#requirements)
  * [Web Server](#web-server)
  * [Dependency Management](#dependency-mgmt)
+1. [Installation](#installation)
 1. [Dependencies](#dependencies)
  * [Composer Plugins](#composer-plugins)
  <!-- * [Ruby Gems](#ruby-gems)
@@ -82,3 +83,47 @@ The HeltheTurbolinksBundle integrates the [Helthe Turbolinks Component](https://
  * Elemental UI Navigation Styles: [elemental-navigation](http://github.com/acquia/elemental-navigation.git)
  * Elemental UI Message Styles: [elemental-messaging](http://github.com/acquia/elemental-messaging.git)
  * Elemental UI Progress Railroad: [elemental-railroad](http://github.com/acquia/elemental-railroad.git) -->
+
+-----------------------------
+
+## <a name='installation'>Installation</a>
+
+_Please ensure that all [requirements](#requirements) have been met before proceeding._
+
+-----------------------------
+### Setup Virtual host
+ > Examples use OS X's built in Apache and PHP
+
+Create an Apache Virtual Host for your chosen local development hostname.
+ >  @file: /etc/apache2/extra/httpd-vhosts.conf
+
+```apache
+<VirtualHost *:80>
+  DocumentRoot "/absolute/path/to/installation/directory/log.pt"
+  ServerName log.pt
+  ServerAlias log.pt
+  ErrorLog "/private/var/log/apache2/log.pt-error_log"
+  CustomLog "/private/var/log/apache2/log.pt-access_log" common
+  <Directory /absolute/path/to/installation/directory/log.pt>
+    Options FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+```
+
+Create hosts entry
+>  @file: /etc/hosts  
+```
+127.0.0.1        www.log.pt
+127.0.0.1        log.pt
+```
+
+### Install dependencies
+Install composer plugins  
+```bash
+composer install
+```
+
+### View [Log](http://log.pt) in a browser.
