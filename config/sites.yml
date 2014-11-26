@@ -1,0 +1,4 @@
+default:
+  domain: '*'
+  location: sites/default
+  environment: live

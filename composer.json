@@ -1,0 +1,16 @@
+{
+  "name": "log/elemental",
+  "description": "Elemental UI docs built with Log",
+  "license": "proprietary",
+  "require": {
+    "php": ">=5.3.3",
+    "prontotype/core": "master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/prontotype/core"
+    }
+  ],
+  "minimum-stability": "dev"
+}

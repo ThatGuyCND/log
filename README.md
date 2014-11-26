@@ -22,9 +22,9 @@ Everyone needs a log.
  * [Dependency Management](#dependency-mgmt)
 1. [Dependencies](#dependencies)
  * [Composer Plugins](#composer-plugins)
- * [Ruby Gems](#ruby-gems)
+ <!-- * [Ruby Gems](#ruby-gems)
  * [Node Modules](#node-modules)
- * [Bower Components](#bower-components)
+ * [Bower Components](#bower-components) -->
 
 -----------------------------
 
@@ -48,9 +48,9 @@ _A typical *AMP stack setup with additional cli tools for dependecy management_
 
 ### <a name='dependency-mgmt'>Dependency Management</a>
  * [Composer](https://getcomposer.org/)
- * [NodeJS](http://nodejs.org/)
+ <!-- * [NodeJS](http://nodejs.org/)
  * [Bower](http://bower.io/)
- * [Bundler](http://bundler.io/)
+ * [Bundler](http://bundler.io/) -->
 
 -----------------------------
 ## [[⬆]](#toc) <a name='dependencies'>Dependencies:</a>
@@ -64,7 +64,7 @@ _Log is built upon existing techonologies. Below is a list of dependencies and c
 * [Prontotype v3.0](https://github.com/prontotype/prontotype)  
 Currently a work-in-progress, documentation for [Prontotype](http://prontotype.it) can be found at http://docs.prontotype.it/.  
 
-* [ScanKssBundle](https://github.com/scaninc/ScanKssBundle)  
+<!-- * [ScanKssBundle](https://github.com/scaninc/ScanKssBundle)  
 This bundle provides a simple integration of the [kss-php](https://github.com/scaninc/kss-php) library into Symfony2. KSS is a methodology for documenting CSS and generating styleguides. You can find more information about KSS here at http://warpspire.com/kss/.
 
 * [TurboLinksBundle](https://github.com/helthe/TurbolinksBundle)  
@@ -81,4 +81,4 @@ The HeltheTurbolinksBundle integrates the [Helthe Turbolinks Component](https://
  * Elemental UI Header: [elemental-header](http://github.com/acquia/elemental-header.git)
  * Elemental UI Navigation Styles: [elemental-navigation](http://github.com/acquia/elemental-navigation.git)
  * Elemental UI Message Styles: [elemental-messaging](http://github.com/acquia/elemental-messaging.git)
- * Elemental UI Progress Railroad: [elemental-railroad](http://github.com/acquia/elemental-railroad.git)
+ * Elemental UI Progress Railroad: [elemental-railroad](http://github.com/acquia/elemental-railroad.git) -->
